@@ -7,7 +7,7 @@ import iconRedux from "../../assets/icons8-redux.svg"
 
 const Banner = () => {
   return (
-    <section className="flex flex-col justify-between px-5 py-3 bg-banner h-1/2 text-white">
+    <section className="flex flex-col justify-between px-5 py-3 bg-black h-[50vh] text-white">
       <Header></Header>
 
       <div>
