@@ -1,27 +1,35 @@
 import Header from "../Header"
+import iconHtml from "../../assets/icons8-html.svg"
+import iconCss from "../../assets/icons8-css.svg"
+import iconJs from "../../assets/icons8-javascript.svg"
+import iconReact from "../../assets/icons8-reaccionar.svg"
+import iconRedux from "../../assets/icons8-redux.svg"
 
 const Banner = () => {
   return (
-    <section className="px-5 py-2 bg-black h-1/2 text-white">
+    <section className="flex flex-col justify-between px-5 py-3 bg-banner h-1/2 text-white">
       <Header></Header>
 
       <div>
-        <p>Hi there</p>
-        <h1>I am Front-end Developer|</h1>
+        <p className="font-Kanit">Hi there,</p>
+        <h1 className="font-Kanit text-3xl font-bold">I am Front-end Developer</h1>
       </div>
 
-      <div className="flex">
-        <div className="flex flex-col">
-          <p>Email</p>
-          <p>alejomira96@gmail.com</p>
+      <div className="flex gap-3">
+        <div className="w-7">
+          <img src={iconHtml} alt="icon-html5" />
         </div>
-        <div className="flex flex-col">
-          <p>Phone</p>
-          <p>+57 312 3119897</p>
+        <div className="w-7">
+          <img src={iconCss} alt="icon-css3" />
         </div>
-        <div className="flex flex-col">
-          <p>Location</p>
-          <p>Colombia</p>
+        <div className="w-7">
+        <img src={iconJs} alt="icon-JS" />
+        </div>
+        <div className="w-7">
+        <img src={iconReact} alt="icon-React" />
+        </div>
+        <div className="w-7">
+        <img src={iconRedux} alt="icon-Redux" />
         </div>
       </div>
     </section>
