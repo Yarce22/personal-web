@@ -7,12 +7,13 @@ import iconRedux from "../../assets/icons8-redux.svg"
 
 const Banner = () => {
   return (
-    <section className="flex flex-col justify-between px-5 py-3 bg-black h-[50vh] text-white">
+    <section className="flex flex-col justify-between p-8 bg-bgBanner h-[75vh] text-white">
       <Header></Header>
 
       <div>
-        <p className="font-Kanit">Hi there,</p>
-        <h1 className="font-Kanit text-3xl font-bold">I am Front-end Developer</h1>
+        <p className="inline px-2 font-Kanit bg-Green rounded-md">Fronted-End Developer</p>
+        <h2 className="mt-5 font-Roboto text-3xl font-medium">I am Front-end Developer</h2>
+        <p></p>
       </div>
 
       <div className="flex gap-3">
