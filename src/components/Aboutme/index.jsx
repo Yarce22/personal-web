@@ -7,7 +7,7 @@ const Aboutme = () => {
   return (
     <section className="body grid p-8 bg-bgBody text-white">
       <div>
-        <div className="flex mb-2 p-5 bg-bgBanner rounded-md">
+        <div className="flex justify-between mb-2 p-5 bg-bgBanner rounded-md">
           <div>
             <h3 className="text-xl text-Green">Precise</h3>
             <p className="mt-1">Create precise and efficient code</p>
@@ -15,7 +15,7 @@ const Aboutme = () => {
 
           <img src={precise} alt="icon-design" className="h-5 ml-5" />
         </div>
-        <div className="flex mb-2 p-5 bg-bgBanner rounded-md">
+        <div className="flex justify-between mb-2 p-5 bg-bgBanner rounded-md">
           <div>
             <h3 className="text-2xl text-Green">Simple</h3>
             <p className="mb-5">Create simple code that is easy to understand</p>
@@ -23,7 +23,7 @@ const Aboutme = () => {
 
           <img src={simple} alt="icon-design" className="h-6 ml-5" />
         </div>
-        <div className="flex p-5 bg-bgBanner rounded-md">
+        <div className="flex justify-between p-5 bg-bgBanner rounded-md">
           <div>
             <h3 className="text-xl text-Green">Growth</h3>
             <p className="mb-5">I am always looking to grow and learn new skills</p>
