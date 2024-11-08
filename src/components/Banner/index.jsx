@@ -12,8 +12,9 @@ const Banner = () => {
 
       <div>
         <p className="inline px-2 font-Kanit bg-Green rounded-md">Fronted-End Developer</p>
-        <h2 className="mt-5 font-Roboto text-3xl font-medium">I am Front-end Developer</h2>
-        <p></p>
+        <h2 className="my-5 font-Roboto text-3xl font-medium">I am Front-end Developer</h2>
+        <p className="mb-10">Simple and precise code.</p>
+        <a href="" className="text-Green font-semibold">LET'S CHAT!</a>
       </div>
 
       <div className="flex gap-3">

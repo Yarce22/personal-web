@@ -1,0 +1,13 @@
+.body {
+  grid-template-areas: 
+    "cards"
+    "presentation";
+}
+
+.body div:first-child {
+  grid-area: presentation;
+}
+
+.body div:last-child() {
+  grid-area: cards
+}
