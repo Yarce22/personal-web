@@ -4,7 +4,7 @@ import { useState } from 'react';
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
 
-  const openHamburger = "absolute flex flex-col top-12 items-end w-full h-[100vh] pr-2 bg-gray-900"
+  const openHamburger = "absolute flex flex-col top-12 px-2 items-end w-full h-[60vh] bg-bgBanner"
   const fontsBottomsHamburger = "m-2 font-semibold text-xl font-Kanit"
 
   return (
