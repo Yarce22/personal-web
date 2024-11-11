@@ -4,10 +4,11 @@ import iconCss from "../../assets/icons8-css.svg"
 import iconJs from "../../assets/icons8-javascript.svg"
 import iconReact from "../../assets/icons8-reaccionar.svg"
 import iconRedux from "../../assets/icons8-redux.svg"
+import fotoPerfil from "../../assets/foto-perfil.webp"
 
 const Banner = () => {
   return (
-    <section className="flex flex-col justify-between p-8 bg-bgBanner h-[75vh] text-white">
+    <section className="flex flex-col justify-between p-8 bg-banner bg-cover h-[75vh] text-white">
       <Header></Header>
 
       <div>

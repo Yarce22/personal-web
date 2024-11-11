@@ -11,7 +11,7 @@ export default {
         Roboto: "'Roboto Slab', serif"
       },
       backgroundImage: {
-        'banner': "url(/src/assets/40158c5333b4dbd4b76c9325c7baddc.webp)"
+        'banner': "url(/src/assets/foto-perfil.webp)"
       },
       colors: {
         Green: "#859F3D",

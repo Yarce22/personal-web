@@ -33,20 +33,29 @@ const Works = () => {
   return (
     <section className="grid p-8 bg-bgBody text-white">
       <div>
-        <h2 className="font-Roboto text-3xl">Latest Works</h2>
-        <p>Perfect solution for digital experience</p>
+        <h2 className="mb-2 text-center font-Roboto text-3xl">Latest Works</h2>
+        <p className="mb-10">Perfect solution for digital experience</p>
       </div>
 
       <div>
         {projects.map(project => {
           return (
-          <div key={project.id}>
-            <h3>{project.name}</h3>
-            <img src={project.published_deploy.screenshot_url} alt={project.name} />
-            <a href={project.url}>Visitar</a>
+          <div
+            className="rounded-lg mb-10"
+            key={project.id}
+          >
+            <a href={project.url}>
+              <img
+                src={project.published_deploy.screenshot_url}
+                alt={project.name}
+                className="rounded-lg"
+              />
+            </a>
           </div>
         )})}
       </div>
+
+      <a href="https://github.com/Yarce22?tab=repositories" className="text-Green font-bold">ALL PROJECTS</a>
     </section>
   );
 };
