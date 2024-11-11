@@ -8,10 +8,14 @@ import fotoPerfil from "../../assets/foto-perfil.webp"
 
 const Banner = () => {
   return (
-    <section className="flex flex-col justify-between p-8 bg-banner bg-cover h-[75vh] text-white">
+    <section className="relative flex flex-col justify-between p-8 h-[75vh] text-white">
       <Header></Header>
 
-      <div>
+      <div className="">
+        <img src={fotoPerfil} alt="" className="absolute bottom-0 right-0 h-full w-full z-[-1]"/>
+      </div>
+
+      <div className="z-2">
         <p className="inline px-2 font-Kanit bg-Green rounded-md">Fronted-End Developer</p>
         <h2 className="my-5 font-Roboto text-3xl font-medium">I am Front-end Developer</h2>
         <p className="mb-10">Simple and precise code.</p>

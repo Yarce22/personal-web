@@ -41,7 +41,7 @@ const Works = () => {
         {projects.map(project => {
           return (
           <div
-            className="rounded-lg mb-10"
+            className="flex flex-col items-center rounded-lg mb-10"
             key={project.id}
           >
             <a href={project.url}>
