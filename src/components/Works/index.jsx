@@ -34,7 +34,7 @@ const Works = () => {
   let projectCard = 0
 
   return (
-    <section className="works grid grid-cols-2 p-8 bg-bgBody text-white lg:gap-5 lg:py-32 lg:px-32" id="works">
+    <section className="works grid p-8 bg-bgBody text-white lg:gap-5 lg:py-32 lg:px-32 lg:grid-cols-2" id="works">
       <div className="title">
         <h2 className="mb-2 text-center font-Roboto text-3xl font-bold md:text-3xl">Latest Works</h2>
         <p className="mb-10 text-center md:text-lg">Perfect solution for digital experience</p>
