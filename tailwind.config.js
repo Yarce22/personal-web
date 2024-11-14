@@ -11,13 +11,19 @@ export default {
         Roboto: "'Roboto Slab', serif"
       },
       backgroundImage: {
-        'banner': "url(/src/assets/foto-perfil.webp)"
+        'banner-lg': "url(/src/assets/banner.webp)"
       },
       colors: {
         Green: "#859F3D",
         bgBanner: "#2d2e31",
         bgBody: "#25262a",
-      }
+      },
+      "border-color": {
+        Green: "#859F3D",
+      },
+      background: {
+        'custom-gradient': 'linear-gradient(315deg, rgba(0,0,0,1) 0%, rgba(55,57,61,1) 30%, rgba(87,90,98,1) 100%)',
+      },
     },
   },
   plugins: [],

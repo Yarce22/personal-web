@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./style.css"
 
 const Works = () => {
   const [projects, setProjects] = useState([]);
@@ -30,32 +31,36 @@ const Works = () => {
     fetchProjects();
   }, []);
 
+  let projectCard = 0
+
   return (
-    <section className="grid p-8 bg-bgBody text-white">
-      <div>
-        <h2 className="mb-2 text-center font-Roboto text-3xl">Latest Works</h2>
-        <p className="mb-10">Perfect solution for digital experience</p>
+    <section className="works grid grid-cols-2 p-8 bg-bgBody text-white lg:gap-5 lg:py-32 lg:px-32" id="works">
+      <div className="title">
+        <h2 className="mb-2 text-center font-Roboto text-3xl font-bold md:text-3xl">Latest Works</h2>
+        <p className="mb-10 text-center md:text-lg">Perfect solution for digital experience</p>
       </div>
 
-      <div>
-        {projects.map(project => {
-          return (
-          <div
-            className="flex flex-col items-center rounded-lg mb-10"
-            key={project.id}
-          >
-            <a href={project.url}>
-              <img
-                src={project.published_deploy.screenshot_url}
-                alt={project.name}
-                className="rounded-lg"
-              />
-            </a>
-          </div>
-        )})}
-      </div>
+      {projects.map(project => {
+        projectCard++
 
-      <a href="https://github.com/Yarce22?tab=repositories" className="text-Green font-bold">ALL PROJECTS</a>
+        return (
+        <div
+          className={"card" + projectCard + " flex flex-col items-center rounded-lg mb-10"}
+          key={project.id}
+        >
+          <a href={project.url}>
+            <img
+              src={project.published_deploy.screenshot_url}
+              alt={project.name}
+              className="rounded-lg"
+            />
+          </a>
+        </div>
+      )})}
+      <div className="flex flex-col justify-center items-center h-full">
+        <a href="https://github.com/Yarce22?tab=repositories" className="link-projects text-Green font-bold text-center md:text-2xl hover:underline">ALL PROJECTS</a>
+        <p className="mt-5">Find all my project in my GitHub</p>
+      </div>
     </section>
   );
 };

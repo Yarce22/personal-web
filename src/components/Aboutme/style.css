@@ -11,3 +11,10 @@
 .body div:last-child() {
   grid-area: cards
 }
+
+@media (min-width: 1024px) {
+  .body {
+    grid-template-areas: 
+      "presentation cards";
+  }
+}

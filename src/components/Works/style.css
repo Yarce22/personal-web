@@ -1,0 +1,30 @@
+@media (min-width: 1024px) {
+  .works {
+    grid-template-areas: 
+      "title card2"
+      "card1 card2"
+      "card1 card3"
+      "link-projects card3"
+      "link-projects card3";
+  }
+  
+  .title {
+    grid-area: title;
+  }
+  
+  .card1 {
+    grid-area: card1;
+  }
+  
+  .card2 {
+    grid-area: card2;
+  }
+  
+  .card3 {
+    grid-area: card3;
+  }
+  
+  .link-projects {
+    grid-area: link-projects;
+  }
+}
