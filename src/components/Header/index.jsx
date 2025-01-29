@@ -57,6 +57,10 @@ const Header = ({language, setLanguage}) => {
           <a href="#aboutme-section" onClick={closeMenu} className={fontsBottomsHamburger}>{getLanguage(language).nav.about}</a>
           <a href="#works" onClick={closeMenu} className={fontsBottomsHamburger}>{getLanguage(language).nav.projects}</a>
           <a href="#contact" onClick={closeMenu} className={fontsBottomsHamburger}>{getLanguage(language).nav.contact}</a>
+          <ButtonLang
+            language={language} 
+            setLanguage={setLanguage}
+          />
         </div>
 
         <div className={windowWidth >= 1024 ? "hidden" : "block"}>

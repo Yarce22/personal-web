@@ -25,7 +25,7 @@ const Banner = ({language, setLanguage}) => {
           <a href="https://wa.me/573123119897" className="text-Green font-semibold md:text-2xl hover:underline">{getLanguage(language).hero.button}</a>
         </div>
 
-        <div className={windowWidth >= 1024 ? "hidden" : ""} data-aos="fade-left">
+        <div className={windowWidth >= 1024 ? "hidden" : ""}>
           <img src={fotoPerfil} alt="foto-perfil" className="absolute bottom-0 right-0 h-full w-full z-[-1] lg:w-auto lg:h-96 lg:z-0 lg:top-0 lg:left-0 lg:m-auto" data-aos="fade-left"/>
         </div>
       </div>

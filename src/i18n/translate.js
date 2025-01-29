@@ -13,22 +13,30 @@ export const translations = {
       button: "LET'S TALK"
     },
     about: {
-      title: 'About Me',
-      description1: "Hi, I'm Alejandro Mira, a passionate Front-end Developer with one year of experience building personal projects with React. My journey in web development has been driven by a constant desire to learn and grow in this ever-evolving field.",
+      title: "Hi, I'm Alejandro Mira,",
+      description1: "a passionate Front-end Developer with one year of experience building personal projects with React. My journey in web development has been driven by a constant desire to learn and grow in this ever-evolving field.",
       description2: "I embrace new challenges with enthusiasm and am always eager to expand my skill set. My experience with React has given me a solid foundation in modern web development, and I'm excited to continue growing as a developer while taking on new and challenging projects.",
       softSkills: 'Soft Skills',
-      skills: {
-        problemSolving: 'Problem Solving',
-        teamCollaboration: 'Team Collaboration',
-        adaptability: 'Adaptability',
-        timeManagement: 'Time Management',
-        continuousLearning: 'Continuous Learning'
-      }
+      skills: [
+        {
+          title: 'Precise',
+          description: 'Create precise and efficient code'
+        },
+        {
+          title: 'Simple',
+          description: 'Create simple code that is easy to understand'
+        },
+        {
+          title: 'Growth',
+          description: 'I am always looking to grow and learn new skills'
+        },
+      ]
     },
     projects: {
-      title: 'Latest Projects',
-      viewProject: 'View Project',
-      viewAll: 'View All Projects on GitHub'
+      title: 'Últimos Proyectos',
+      subtitle: 'Perfectas soluciones para une buena experiencia digital',
+      viewAll: 'All my projects',
+      viewAllText: 'Find all my projects on Github'
     },
     contact: {
       title: "Let's Work Together!",
@@ -49,22 +57,29 @@ export const translations = {
       button: 'ESCRIBEME'
     },
     about: {
-      title: 'Sobre Mí',
-      description1: "Hola, soy Alejandro Mira, un desarrollador Front-end apasionado con un año de experiencia construyendo proyectos personales con React. Mi trayectoria en el desarrollo web ha estado impulsada por un deseo constante de aprender y crecer en este campo en constante evolución.",
+      title: 'Hola, soy Alejandro Mira',
+      description1: "un desarrollador Front-end apasionado con un año de experiencia construyendo proyectos personales con React. Mi trayectoria en el desarrollo web ha estado impulsada por un deseo constante de aprender y crecer en este campo en constante evolución.",
       description2: "Afronto nuevos desafíos con entusiasmo y siempre estoy ansioso por expandir mis habilidades. Mi experiencia con React me ha dado una base sólida en el desarrollo web moderno, y estoy emocionado por seguir creciendo como desarrollador mientras asumo nuevos y desafiantes proyectos.",
-      softSkills: 'Habilidades Blandas',
-      skills: {
-        problemSolving: 'Resolución de Problemas',
-        teamCollaboration: 'Trabajo en Equipo',
-        adaptability: 'Adaptabilidad',
-        timeManagement: 'Gestión del Tiempo',
-        continuousLearning: 'Aprendizaje Continuo'
-      }
+      skills: [
+        {
+          title: 'Precision',
+          description: 'Creo código preciso y efectivo'
+        },
+        {
+          title: 'Simple',
+          description: 'Realizo código fácil de entender por cualquier desarrollador'
+        },
+        {
+          title: 'Crecimiento',
+          description: 'Siempre estoy buscando aprender y hacer crecer mis habilidades.'
+        },
+      ]
     },
     projects: {
       title: 'Últimos Proyectos',
-      viewProject: 'Ver Proyecto',
-      viewAll: 'Ver Todos los Proyectos en GitHub'
+      subtitle: 'Perfectas soluciones para une buena experiencia digital',
+      viewAll: 'Todos los Proyectos',
+      viewAllText: 'Encuentra todos mis proyectos en Github'
     },
     contact: {
       title: "¡Trabajemos Juntos!",

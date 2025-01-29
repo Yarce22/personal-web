@@ -15,9 +15,15 @@ const App = () => {
         language={language} 
         setLanguage={setLanguage} 
       />
-      <Aboutme />
-      <Works />
-      <ContactMe />
+      <Aboutme
+         language={language}
+      />
+      <Works
+        language={language}
+      />
+      <ContactMe
+        language={language}
+      />
     </>
   )
 }
