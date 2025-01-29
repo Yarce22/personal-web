@@ -1,7 +1,9 @@
 import { Squash as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
+import { ButtonLang } from '../ButtonLang';
+import { getLanguage } from '../../utils/functions';
 
-const Header = () => {
+const Header = ({language, setLanguage}) => {
   const [isOpen, setOpen] = useState(false)
 
   const openHamburger = "absolute flex flex-col top-12 px-2 items-end w-full h-[60vh] bg-bgBanner md:h-[47.5vh]"
@@ -27,7 +29,7 @@ const Header = () => {
 
   return (
     <>
-      <header className='relative flex justify-between items-center'>
+      <header className='fixed top-0 left-0 flex justify-between w-full p-4 items-center bg-bgBanner' data-aos="fade-down">
         <div className='flex'>
           <p className='text-white font-Kanit text-xl md:text-4xl'><span className="font-bold">Alejandro</span> Mira</p>
         </div>
@@ -35,10 +37,14 @@ const Header = () => {
         <div className='p'></div>
 
         <div className={isOpen ? openHamburger : "hidden"}>
-          <a href="#home" onClick={closeMenu} className={fontsBottomsHamburger}>Home</a>
-          <a href="#aboutme-section" onClick={closeMenu} className={fontsBottomsHamburger}>About me</a>
-          <a href="#works" onClick={closeMenu} className={fontsBottomsHamburger}>My projects</a>
-          <a href="#contact" onClick={closeMenu} className={fontsBottomsHamburger}>Contact me</a>
+          <a href="#home" onClick={closeMenu} className={fontsBottomsHamburger}>{getLanguage(language).nav.home}</a>
+          <a href="#aboutme-section" onClick={closeMenu} className={fontsBottomsHamburger}>{getLanguage(language).nav.about}</a>
+          <a href="#works" onClick={closeMenu} className={fontsBottomsHamburger}>{getLanguage(language).nav.projects}</a>
+          <a href="#contact" onClick={closeMenu} className={fontsBottomsHamburger}>{getLanguage(language).nav.contact}</a>
+          <ButtonLang
+            language={language} 
+            setLanguage={setLanguage}
+          />
 
           <hr className='w-full my-2' />
 
@@ -47,10 +53,10 @@ const Header = () => {
         </div>
 
         <div className={windowWidth >= 1024 ? "flex" : "hidden"}>
-          <a href="#home" onClick={closeMenu} className={fontsBottomsHamburger}>Home</a>
-          <a href="#aboutme-section" onClick={closeMenu} className={fontsBottomsHamburger}>About me</a>
-          <a href="#works" onClick={closeMenu} className={fontsBottomsHamburger}>My projects</a>
-          <a href="#contact" onClick={closeMenu} className={fontsBottomsHamburger}>Contact me</a>
+          <a href="#home" onClick={closeMenu} className={fontsBottomsHamburger}>{getLanguage(language).nav.home}</a>
+          <a href="#aboutme-section" onClick={closeMenu} className={fontsBottomsHamburger}>{getLanguage(language).nav.about}</a>
+          <a href="#works" onClick={closeMenu} className={fontsBottomsHamburger}>{getLanguage(language).nav.projects}</a>
+          <a href="#contact" onClick={closeMenu} className={fontsBottomsHamburger}>{getLanguage(language).nav.contact}</a>
         </div>
 
         <div className={windowWidth >= 1024 ? "hidden" : "block"}>

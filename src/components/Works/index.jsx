@@ -35,7 +35,7 @@ const Works = () => {
 
   return (
     <section className="works grid p-8 bg-bgBody text-white lg:gap-5 lg:py-32 lg:px-32 lg:grid-cols-2" id="works">
-      <div className="title">
+      <div className="title" data-aos="fade-down">
         <h2 className="mb-2 text-center font-Roboto text-3xl font-bold md:text-3xl">Latest Works</h2>
         <p className="mb-10 text-center md:text-lg">Perfect solution for digital experience</p>
       </div>
@@ -47,6 +47,7 @@ const Works = () => {
         <div
           className={"card" + projectCard + " flex flex-col items-center rounded-lg mb-10"}
           key={project.id}
+          data-aos="fade-up"
         >
           <a href={project.url}>
             <img

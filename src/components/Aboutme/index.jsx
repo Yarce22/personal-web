@@ -6,7 +6,7 @@ import "./style.css"
 const Aboutme = () => {
   return (
     <section className="body grid p-8 bg-bgBody text-white lg:py-32 lg:px-32 lg:gap-36" id="aboutme-section">
-      <div>
+      <div data-aos="fade-right">
         <div className="flex justify-between mb-2 p-5 bg-bgBanner rounded-md">
           <div>
             <h3 className="text-xl text-Green md:text-3xl lg:text-2xl">Precise</h3>
@@ -33,7 +33,7 @@ const Aboutme = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center mb-10 text-white">
+      <div className="flex flex-col justify-center mb-10 text-white" data-aos="fade-left">
         <h2 className="text-center text-2xl font-Roboto font-bold md:text-4xl">Hello! I'm Alejandro</h2>
         <p className="my-5 italic font-medium text-center md:text-xl">Every great web begin with an even better story</p>
         <p className="md:text-2xl">I started in the world of programming 1 year ago. Since then I have dreamed of becoming one of the most competent people. I am passionate about learning new skills and I have never been afraid of new challenges.</p>       
