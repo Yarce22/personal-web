@@ -12,7 +12,7 @@ const windowWidth = window.innerWidth
 
 const Banner = ({language, setLanguage}) => {
   return (
-    <section className="relative flex flex-col justify-end p-8 h-[75vh] text-white md:h-[55vh] lg:py-12 lg:px-32 lg:h-[75vh] lg:bg-banner-lg lg:bg-cover xl:h-[100vh]" id="home">
+    <section className="relative flex flex-col justify-end p-8 h-[75vh] text-white md:h-[100lvh] lg:py-12 lg:px-32 lg:h-[75vh] lg:bg-banner-lg lg:bg-cover xl:h-[100vh]" id="home">
       <Header 
         language={language} 
         setLanguage={setLanguage}

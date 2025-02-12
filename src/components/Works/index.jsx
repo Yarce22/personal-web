@@ -10,9 +10,11 @@ const Works = ({language}) => {
     const fetchProjects = async () => {
       try {
         const response = await fetch('https://api.netlify.com/api/v1/sites', {
+          method: 'GET',
           headers: {
-            'Authorization': `Bearer nfp_6TQF4JcFQ3MTaRf6x8ytQXqxG3u9P9E95209`
-          }
+            'Authorization': `Bearer nfp_qLXyDSQRapGkEQ1hyrpYigTK7QgtFSSMf158`,
+            "Content-Type": "application/json",
+          },
         });
         if (!response.ok) {
           throw new Error('Network response was not ok');

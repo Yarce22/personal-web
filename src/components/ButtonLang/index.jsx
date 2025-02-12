@@ -4,7 +4,7 @@ const ButtonLang = ({ setLanguage, language }) => {
   }
 
   return(
-    <button className='w-12' onClick={toggleLanguage}>
+    <button className='w-12 ml-6' onClick={toggleLanguage}>
       <img src={
         language
         ? 'https://img.icons8.com/?size=100&id=17967&format=png&color=000000'
