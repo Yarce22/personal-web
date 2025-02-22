@@ -33,8 +33,8 @@ export const translations = {
       ]
     },
     projects: {
-      title: 'Últimos Proyectos',
-      subtitle: 'Perfectas soluciones para une buena experiencia digital',
+      title: 'LAST WORKS',
+      subtitle: 'Perfect solutions for a good digital experience',
       viewAll: 'All my projects',
       viewAllText: 'Find all my projects on Github'
     },
@@ -77,7 +77,7 @@ export const translations = {
     },
     projects: {
       title: 'Últimos Proyectos',
-      subtitle: 'Perfectas soluciones para une buena experiencia digital',
+      subtitle: 'Perfectas soluciones para una buena experiencia digital',
       viewAll: 'Todos los Proyectos',
       viewAllText: 'Encuentra todos mis proyectos en Github'
     },
